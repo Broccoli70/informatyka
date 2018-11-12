@@ -4,13 +4,13 @@
 }
 
 html {
-  overflow: auto;
+  overflow: hidden;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background: rgb(222, 222, 222);
+  background: rgb(37, 37, 37);
 }
 
 /* Starter */
@@ -22,6 +22,7 @@ body {
   height: 100vh;
   background: url("img/logo_bg.jpg") center center no-repeat;
   background-size: cover;
+  z-index: 100;
 }
 
 .logo {
@@ -34,6 +35,7 @@ body {
   height: 500px;
   background: url("img/logo.png") center center no-repeat;
   background-size: contain;
+  z-index: 100;
 }
 
 /* Starter */
@@ -49,9 +51,9 @@ header {
 h1 {
   position: absolute;
   font-size: 8rem;
-  color: rgb(255, 255, 255);
+  color: rgb(159, 154, 108);
   padding: 50px;
-  background: black;
+  background: rgb(43, 42, 31);
   text-align: center;
   margin-top: 20px;
   font-family: serif;
@@ -70,9 +72,10 @@ main {
   display: flex;
   flex-direction: column;
   grid-area: 1 / 1 / 1 / 1;
-  background: rgb(205, 205, 205);
+  background: rgb(42, 42, 42);
   justify-content: center;
   align-items: center;
+  color: rgb(144, 136, 67);
 }
 
 h2 {
@@ -100,9 +103,10 @@ p {
 .box4 {
   display: flex;
   flex-direction: column;
-  background: rgb(235, 161, 207);
+  background: rgb(14, 14, 14);
   justify-content: center;
   align-items: center;
+  color: rgb(92, 86, 37);
 }
 
 .quiz {
@@ -115,7 +119,7 @@ p {
   display: flex;
   width: 100%;
   height: 15vh;
-  background: rgb(55, 55, 55);
+  background: rgb(131, 131, 131);
   justify-content: center;
   align-items: center;
   font-family: arial;
@@ -182,7 +186,7 @@ footer {
   display: flex;
   width: 100%;
   height: 30vh;
-  background: rgb(156, 152, 155);
+  background: rgb(144, 136, 67);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -191,4 +195,17 @@ footer {
   font-size: 1.5rem;
   color: rgb(190, 190, 190);
   text-shadow: 0 2px 5px black;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }

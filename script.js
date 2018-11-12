@@ -2,40 +2,40 @@ $(function() {
 
   //animacja tla
 
-  // $(".start")
-  // .css({
-  //   display: "grid",
-  // })
-  // .animate({
-  //   opacity: 1,
-  // }, 2000, () => {
-  //
-  //   $(".start")
-  //   .animate({
-  //     opacity: 0,
-  //   }, 2000, ()=>{ $(".start").css({ display:"none"}); $("html").css({ overflow: "auto", }) });
-  //
-  // })
-  //
-  //
-  // //animacja logo
-  //
-  // $(".logo")
-  // .css({
-  //   display: "grid",
-  //   overflow: "hidden",
-  // })
-  // .delay(500)
-  // .animate({
-  //   opacity: 1,
-  // }, 2000, () => {
-  //
-  //   $(".logo")
-  //   .animate({
-  //     opacity: 0,
-  //   }, 2000, ()=>{ $(".logo").css({ display:"none", overflow: "auto" }) });
-  //
-  // })
+  $(".start")
+  .css({
+    display: "grid",
+  })
+  .animate({
+    opacity: 1,
+  }, 2000, () => {
+
+    $(".start")
+    .animate({
+      opacity: 0,
+    }, 2000, ()=>{ $(".start").css({ display:"none"}); $("html").css({ overflow: "auto", }) });
+
+  })
+
+
+  //animacja logo
+
+  $(".logo")
+  .css({
+    display: "grid",
+    overflow: "hidden",
+  })
+  .delay(500)
+  .animate({
+    opacity: 1,
+  }, 2000, () => {
+
+    $(".logo")
+    .animate({
+      opacity: 0,
+    }, 2000, ()=>{ $(".logo").css({ display:"none", overflow: "auto" }) });
+
+  })
 
 
 
